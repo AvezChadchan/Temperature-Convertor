@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Temperature Convertor</h1>
+
+    <form id="tempconvertor">
+        <label for="celsius">Celsius:</label><br>
+        <input type="number" id="celsius"><br><br>
+        <button type="button" onclick="ConvertCtoF()">Celsius to Farenheit</button><br>
+        <p id="ctof"></p>
+
+
+        <label for="farenheit">Farenheit:</label><br>
+        <input type="number" id="farenheit"><br><br>
+        <button type="button" onclick="ConvertFtoC()">Farenheit to Celsius</button><br>
+        <p id="ftoc"></p>
+    </form>
+    <script>
+        function ConvertCtoF() {
+            let celsius2 = document.getElementById('celsius').value;
+            let farenheit2 = (celsius2 * 9 / 5) + 32;
+            document.getElementById('ctof').innerHTML = `${celsius2}°C is equal to ${farenheit2}°F`;
+        }
+        function ConvertFtoC() {
+            let farenheit2 = document.getElementById('farenheit').value;
+            let celsius2 = (farenheit2 - 32) * 5 / 9;
+            document.getElementById('ftoc').innerHTML = `${farenheit2}°F is equal to ${celsius2}°C`;
+        }
+    </script>
+</body>
+
+</html>

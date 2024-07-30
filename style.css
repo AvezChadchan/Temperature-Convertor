@@ -1,0 +1,56 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    background: url('img/temperature.jpg') no-repeat center;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    text-decoration: underline;
+    font-size: 40px;
+    color: white;
+}
+
+h1:hover {
+    color: black;
+}
+
+#tempconvertor {
+    width: 400px;
+    height: 450px;
+    border: 5px solid black;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 530;
+    top: 100px;
+    box-sizing: border-box;
+    box-shadow: 7px 10px;
+    color: black;
+}
+#tempconvertor label{
+    color: white;
+}
+#tempconvertor input {
+    border-radius: 7px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#tempconvertor button {
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 9px;
+}
+
+#tempconvertor button:hover {
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+}
